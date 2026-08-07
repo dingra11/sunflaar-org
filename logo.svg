@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 100 100">
+
+    <g transform="translate(50,50)">
+
+        <path fill="#eab308" d="M0 -15 C10 -40 20 -40 0 -48 C-20 -40 -10 -40 0 -15" transform="rotate(0)"></path>
+
+        <path fill="#eab308" d="M0 -15 C10 -40 20 -40 0 -48 C-20 -40 -10 -40 0 -15" transform="rotate(30)"></path>
+
+        <path fill="#eab308" d="M0 -15 C10 -40 20 -40 0 -48 C-20 -40 -10 -40 0 -15" transform="rotate(60)"></path>
+
+        <path fill="#eab308" d="M0 -15 C10 -40 20 -40 0 -48 C-20 -40 -10 -40 0 -15" transform="rotate(90)"></path>
+
+        <path fill="#eab308" d="M0 -15 C10 -40 20 -40 0 -48 C-20 -40 -10 -40 0 -15" transform="rotate(120)"></path>
+
+        <path fill="#eab308" d="M0 -15 C10 -40 20 -40 0 -48 C-20 -40 -10 -40 0 -15" transform="rotate(150)"></path>
+
+        <path fill="#eab308" d="M0 -15 C10 -40 20 -40 0 -48 C-20 -40 -10 -40 0 -15" transform="rotate(180)"></path>
+
+        <path fill="#eab308" d="M0 -15 C10 -40 20 -40 0 -48 C-20 -40 -10 -40 0 -15" transform="rotate(210)"></path>
+
+        <path fill="#eab308" d="M0 -15 C10 -40 20 -40 0 -48 C-20 -40 -10 -40 0 -15" transform="rotate(240)"></path>
+
+        <path fill="#eab308" d="M0 -15 C10 -40 20 -40 0 -48 C-20 -40 -10 -40 0 -15" transform="rotate(270)"></path>
+
+        <path fill="#eab308" d="M0 -15 C10 -40 20 -40 0 -48 C-20 -40 -10 -40 0 -15" transform="rotate(300)"></path>
+
+        <path fill="#eab308" d="M0 -15 C10 -40 20 -40 0 -48 C-20 -40 -10 -40 0 -15" transform="rotate(330)"></path>
+
+        <circle cx="0" cy="0" r="18" fill="#422006"></circle>
+
+        <circle cx="-6" cy="-6" r="1.5" fill="#854d0e"></circle>
+        <circle cx="6" cy="-6" r="1.5" fill="#854d0e"></circle>
+        <circle cx="-6" cy="6" r="1.5" fill="#854d0e"></circle>
+        <circle cx="6" cy="6" r="1.5" fill="#854d0e"></circle>
+        <circle cx="0" cy="0" r="1.5" fill="#854d0e"></circle>
+        <circle cx="-10" cy="0" r="1.5" fill="#854d0e"></circle>
+        <circle cx="10" cy="0" r="1.5" fill="#854d0e"></circle>
+        <circle cx="0" cy="-10" r="1.5" fill="#854d0e"></circle>
+        <circle cx="0" cy="10" r="1.5" fill="#854d0e"></circle>
+
+    </g>
+
+</svg>
