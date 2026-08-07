@@ -1,0 +1,13 @@
+# Virtual environment
+test_env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Build files
+dist/
+*.egg-info/
+
+# macOS
+.DS_Store
