@@ -1,16 +1,5 @@
 <p align="center">
   <img src="logo.svg" alt="SunFLAAR Logo" width="70" style="vertical-align:middle;">
-
-  <span style="
-      font-family: Outfit, Arial, Helvetica, sans-serif;
-      font-size:58px;
-      font-weight:800;
-      vertical-align:middle;
-      margin-left:12px;
-      letter-spacing:-2px;
-      color:#ffffff;">
-      Sun<span style="color:#facc15;">FLAAR</span>
-  </span>
 </p>
 
 <h1 align="center">
@@ -32,193 +21,64 @@ Open-source Python package for AI-powered Solar Flare Analysis
 </p>
 
 ---
+# SunFLAAR
 
-## Overview
+SunFLAAR is a comprehensive Python package for solar observation visualization, data processing, and deep-learning-based solar flare forecasting. 
 
-SunFLAAR is an open-source Python package for **solar flare forecasting, active region classification, multivariate time-series analysis, and space weather research**.
+## Package Structure
 
-It combines deep learning, statistical learning, and solar physics utilities into a single research framework suitable for:
+SunFLAAR is organized into modular interfaces for visualization, forecasting, data processing, and research workflows. 
 
-- Solar flare prediction
-- Time-series forecasting
-- Active region analysis
-- Imbalanced dataset evaluation
-- Scientific visualization
-- Space weather research
-
-The project aims to provide an accessible interface for researchers while maintaining reproducibility and scientific transparency.
-
----
-
-## Features
-
-✔ Solar flare prediction using Deep Learning
-
-✔ Transformer + ResNet models
-
-✔ Multivariate Time-Series preprocessing
-
-✔ Active Region classification
-
-✔ Statistical evaluation metrics
-
-✔ Publication-ready plots
-
-✔ REST API support
-
-✔ Command-line Interface
-
-✔ Research friendly
+| Module | Import | Description |
+|:-------|:-------|:------------|
+| **SunVis** | `from sunflaar import sunvis` | Live full-disk solar observations from SDO/AIA, GOES, and Helioviewer with multi-wavelength visualization. |
+| **Predict** | `from sunflaar import predict` | Deep-learning solar flare forecasting using pretrained SunFLAAR models on live or historical observations. |
+| **Data** | `from sunflaar import data` | Download, preprocess, clean, and synchronize solar observations from supported archives. |
+| **Plotting** | `from sunflaar import plotting` | Publication-quality scientific visualizations, diagnostic dashboards, and statistical plots. |
+| **Model** | `from sunflaar import model` | Neural network architectures and utilities for research and inference. |
+| **CLI** | `from sunflaar import cli` | Command-line interface for prediction, visualization, and workflow automation. |
+| **REST API**| `from sunflaar import app` | HTTP interface for integrating SunFLAAR into external applications and dashboards. |
 
 ---
 
-## Installation
+## SunVis
 
-Install from PyPI
+The **SunVis** module provides a professional interface for exploring the Sun in real time using multiple observational instruments.
 
-```bash
-pip install sunflaar
-```
+### Features
+* Live SDO/AIA observations
+* Multi-wavelength imaging
+* GOES X-ray flux overlay
+* Active region identification
+* Limb and heliographic grid rendering
+* Historical observation retrieval
+* Interactive zoom and region inspection
+* Publication-quality visualization
 
-or
+### Supported Wavelengths
 
-```bash
-python -m pip install sunflaar
-```
+| Channel | Instrument | Science Target |
+|:--------|:-----------|:---------------|
+| **94 Å** | SDO/AIA | Hot flare plasma |
+| **131 Å** | SDO/AIA | Flare cores |
+| **171 Å** | SDO/AIA | Quiet corona |
+| **193 Å** | SDO/AIA | Active corona |
+| **211 Å** | SDO/AIA | Active regions |
+| **304 Å** | SDO/AIA | Chromosphere |
+| **335 Å** | SDO/AIA | High-temperature corona |
 
----
+### Examples
 
-## Quick Start
+You can quickly launch a live viewer using the functional API:
 
 ```python
-from sunflaar import Predictor
+from sunflaar import sunvis
 
-model = Predictor()
+# Launch a live view
+sunvis.live()
 
-prediction = model.predict("timeseries.csv")
-
-print(prediction)
-```
-
----
-
-## Modules
-
-| Module | Description |
-|---------|-------------|
-| data | Data preprocessing |
-| model | AI prediction models |
-| plotting | Scientific plotting |
-| app | REST API |
-| cli | Command Line Interface |
-
----
-
-## Example Workflow
-
-```text
-GOES Data
-      │
-      ▼
-Preprocessing
-      │
-      ▼
-Feature Engineering
-      │
-      ▼
-Deep Learning Model
-      │
-      ▼
-Prediction
-      │
-      ▼
-Visualization
-```
-
----
-
-## Documentation
-
-Documentation
-
-https://sunflaar.vercel.app
-
-API Reference
-
-https://sunflaar.vercel.app/docs
-
-PyPI
-
-https://pypi.org/project/sunflaar/
-
----
-
-## Scientific Applications
-
-SunFLAAR can be used for
-
-- Solar flare prediction
-- Space weather forecasting
-- Solar cycle studies
-- Machine Learning research
-- AI for heliophysics
-- Active Region analysis
-
----
-
-## Citation
-
-If you use SunFLAAR in your research, please cite
-
-```bibtex
-@software{sunflaar2026,
-  author = {Jashanpreet Singh Dingra},
-  title = {SunFLAAR: Open-source Python package for Solar Flare Analysis},
-  year = {2026},
-  version = {1.0.4},
-  url = {https://github.com/dingra11/sunflaar}
-}
-```
-
----
-
-## Contributing
-
-Contributions are welcome.
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Open a Pull Request
-
----
-
-## License
-
-MIT License
-
----
-
-## Acknowledgements
-
-SunFLAAR builds upon the scientific Python ecosystem including
-
-- NumPy
-- SciPy
-- PyTorch
-- Matplotlib
-- Pandas
-
-Special thanks to the solar physics and machine learning communities.
-
----
-
-## Author
-
-**Jashanpreet Singh Dingra**
-
-Founder — SunFLAAR
-
-GitHub: https://github.com/dingra11
-
-Website: https://sunflaar.vercel.app
+# Or view a specific historical date and wavelength
+sunvis.show(
+    wavelength=171,
+    date="2026-08-07T12:30"
+)

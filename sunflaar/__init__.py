@@ -1,4 +1,23 @@
-from .model import SunFLAARTransformer
-from .data import fetch_sdac_observational_data, fetch_solar_euv_image
+# sunflaar/__init__.py
 
-__version__ = "1.0.0"
+"""
+SunFLAAR: Solar visualization, data processing, and flare forecasting.
+"""
+
+# Core modules
+from . import visualization as sunvis
+from . import prediction as predict
+
+# Standard data/model modules
+from . import data
+from . import model
+from . import plotting
+
+# Do NOT import `app.py` here to avoid Streamlit Context errors.
+__all__ = [
+    "sunvis",
+    "predict",
+    "data",
+    "model",
+    "plotting"
+]

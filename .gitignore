@@ -1,13 +1,14 @@
-# Virtual environment
+# Environments
 test_env/
+venv/
+env/
 
-# Python cache
-__pycache__/
-*.py[cod]
-
-# Build files
+# Build artifacts
 dist/
+build/
 *.egg-info/
+__pycache__/
+*.pyc
 
-# macOS
+# Mac system files
 .DS_Store
