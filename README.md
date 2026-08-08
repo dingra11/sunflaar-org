@@ -23,7 +23,7 @@ Open-source Python package for AI-powered Solar Flare Analysis
 <p align="center">
   <img src="d1.png" alt="SunFLAAR Dashboard" width="900">
   <img src="d2.png" alt="SunFLAAR Dashboard" width="900">
-  <img src="d2.png" alt="SunFLAAR Dashboard" width="900">
+  <img src="d3.png" alt="SunFLAAR Dashboard" width="900">
 </p>
 
 # SunFLAAR
