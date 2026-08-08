@@ -20,7 +20,11 @@ Open-source Python package for AI-powered Solar Flare Analysis
 
 </p>
 
----
+<p align="center">
+  <img src="d1.png" alt="SunFLAAR Dashboard" width="900">
+  <img src="d2.png" alt="SunFLAAR Dashboard" width="900">
+</p>
+
 # SunFLAAR
 
 SunFLAAR is a comprehensive Python package for solar observation visualization, data processing, and deep-learning-based solar flare forecasting. 
