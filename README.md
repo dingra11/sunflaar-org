@@ -9,6 +9,9 @@ SunFLAAR
 <p align="center">
 Open-source Python package for AI-powered Solar Flare Analysis
 </p>
+<p align="center">
+Web-Portal: https://sunflaar.streamlit.app/ Main-Website: https://sunflaar.vercel.app
+</p>
 
 <p align="center">
 
